@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, 
+    shrink-to-fit=no">
+    <!-- Google Auth Code -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="Assets/4.jpeg">
+    <title>Book</title>
+    <style>
+      .boxcard{
+        height:20vh; 
+        width:50vw; 
+       /*width: 200px;*/
+        margin: 0 auto; 
+        margin-bottom:30px;"
+        border:20px solid white;
+        border-radius:25px;
+        transition-property: width, height, line-height;
+        display: block;
+
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5s;
+      }
+       .boxcard a{
+       line-height: 20vh;
+       color:#fff;
+       text-decoration: none;
+       font-size:2em;
+      }
+      .boxcard:hover{
+        height:25vh;
+        width:60vw;
+        border-radius: 27px;
+        line-height: 25vh;
+      }
+    </style>
+  </head>
+  <body>
+
+
+
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Assets/4.jpeg" class="rounded" width="30" height="30"> Qkres</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scan</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <a class="btn btn-lg btn-success" href="Sign-in.html" role="button">Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!-- Loader -->
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+    
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    
+    </div>
+
+    <!-- home -->
+    <div id="home" class="welcome-area active">
+        <div class="container active">
+          <!-- <div class="home-text mt-5">
+             <div class="row mb-5 pb-5">
+               <div class="col-sm"></div>
+              <div class="col-sm-8">              
+                <h3>Welcome to Mess Registration Portal</h3>
+              </div>
+              <div class="col-sm mb-5"></div>
+             </div>
+            <a class="mt-5 btn btn-success" href="#"> Book Now</a>
+          </div> -->
+          <div class = "boxcard" style="background: url(images/breakfast.jpg); border:2px solid white;"><a href="messbreakfast.html">Breakfast</a></div>
+          <div class = "boxcard" style="background: url(images/lunch.jpg); border:2px solid white;"><a href="#">Lunch</a></div>
+          <div class = "boxcard" style="background: url(images/dinner.jpg); border:2px solid white;"><a href="#">Dinner</a></div>
+      </div>
+      </div>
+
+
+
+
+  <!--Bottom -->
+  <footer class="footer mt-auto py-3 bg-success">
+    <div class="container text-center">
+      <span class="text-dark">&copy; <script> document.write(new Date().getFullYear()) </script> All rights reserved</span>
+    </div>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+      
+          setTimeout(function(){
+              $('body').addClass('loaded');
+          }, 1000);
+      
+      });
+  </script>
+  </body>
+</html>

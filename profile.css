@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montaga', serif;
+}
+/* pre-loader */
+.main {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+}
+.lo{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f8dc81;
+  background-position: center center; 
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.loader {
+ 
+  margin: 0;
+  padding: 0;
+}
+
+.let {
+  font-size: 50px;
+  color: #0d335d;
+  font-weight: bold;
+  font-family: 'Gorditas', cursive;
+  position: relative;
+  top: 0.63em;  
+  display: inline-block;
+  text-transform: uppercase;  
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.let1 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.let2 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.3s;
+}
+
+.let3 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.4s;
+}
+
+.let4 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.5s;
+
+}
+
+.let5 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.7s;
+}
+
+.let6 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+.let7 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 1.9s;
+ 
+}
+.let8 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+  .let9 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2.1s;
+}
+  .let10 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2.2s;
+  padding-right: 20px;
+}
+  .let11 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2.3s;
+}
+.let12 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2.4s;
+}
+.let13 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2.5s;
+}
+.let14 {
+  animation: drop 2.5s ease-in-out infinite;
+  animation-delay: 2.6s;
+}
+
+@keyframes drop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    80% {
+        opacity: 1;
+        top: 3.78em;
+        transform: rotateX(-360deg);
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 6.94em
+    }
+}
+
+/* main section */
+
+.welcome-area
+{
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Assets/profile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+
+
+.cont{
+  width: 38%;
+  height: 70%;
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 2rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2);
+  padding: 3rem;
+  align-items: center;
+}
+
+.Name{
+  margin: 7%;
+
+}
+.avatar{
+  font-size: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8%;
+  left:calc(50% - 50px);
+  }
+
+/* table */
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  vertical-align: bottom;
+  padding-left: 10px;  
+  text-align: left;
+  height: 60px;
+}
+
+h4{
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+}
+
+/* button */
+
+.B{
+  margin-top: 8%;
+}
+
+.butn{
+  position: relative; 
+  display:inline block; 
+  width: 180px;
+  color: white;
+  font-size: 18px;
+  font-family: "montserrat";
+  text-decoration: none;
+  margin: 30px 0;
+  border: 3px solid #295939;
+  padding: 14px 40px; 
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+.butn::before{
+  background: #295939;
+  color: #000;
+  content: "";
+   position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 0%;
+  height: 100%;
+}
+
+.butn:hover::before{
+  width: 100%;
+  color: #000;
+}
+.ic{
+  padding-right: 10px ;
+  font-size: 20px;
+}
+
+
+
+ /* media */
+ @media(max-width: 1224px)
+ {
+  .cont{
+    width: 60%;
+    height: 80%;
+  }
+  td {
+    height: 60px;
+  }
+  h2{
+    font-size: 35px;
+  }
+h4{
+  font-size: 26px;
+}
+.B{
+  margin-top: 8%;
+}
+.butn{
+  width: 120px;
+  font-size: 22px;
+  padding: 14px 20px; 
+}
+.avatar{
+  position: absolute;
+  top: 4%;
+  }
+ }
+
+ @media(max-width: 1200px){
+  .cont{
+    width: 50%;
+  }
+
+ }
+
+ @media(max-width: 1024px){
+  .welcome-area{
+    background-position: left 10%;
+  }
+  .cont{
+    width: 60%;
+    height: 50%;
+  }
+  .let {
+    font-size: 45px;
+  }
+  td {
+    height: 70px;
+  }
+  h2{
+    font-size: 35px;
+  }
+h4{
+  font-size: 28px;
+}
+.B{
+  margin-top: 10%;
+}
+.avatar{
+  font-size: 100px;
+  position: absolute;
+  top: 20%;
+  }
+ }
+ @media(max-width: 1000px){
+  .cont{
+    width: 60%;
+    height: 80%;
+  }
+  td {
+    height: 60px;
+  }
+  h2{
+    font-size: 30px;
+  }
+h4{
+  font-size: 24px;
+}
+.B{
+  margin-top: 10%;
+}
+.avatar{
+  font-size: 80px;
+  position: absolute;
+  top: 4%;
+  }
+ }
+ @media(max-width: 800px){
+  .cont{
+    width: 80%;
+    height: 70%;
+  }
+  td {
+    height: 70px;
+  }
+  h2{
+    font-size: 32px;
+  }
+h4{
+  font-size: 24px;
+}
+.B{
+  margin-top: 8%;
+}
+.avatar{
+  position: absolute;
+  top: 10%;
+  }
+  .butn{
+    width: 120px;
+    font-size: 18px;
+    padding: 8px 20px; 
+  }
+
+}
+ @media(max-width: 768px){
+  .welcome-area{
+    background-position: left 10%;
+  }
+    .cont{
+      width: 80%;
+      height: 60%;
+    }
+    td {
+      height: 70px;
+    }
+    h2{
+      font-size: 32px;
+    }
+  h4{
+    font-size: 26px;
+  }
+  .B{
+    margin-top: 10%;
+  }
+  .avatar{
+    position: absolute;
+    top: 14%;
+    }
+ 
+ }
+
+ @media(max-width: 570px){
+  .welcome-area{
+    background-position: left;
+  }
+
+  .let {
+    font-size: 30px;
+  }
+  .cont{
+    width: 95%;
+    padding: 1rem;
+    height: 50%;
+  }
+  td {
+    height: 40px;
+  }
+  h2{
+    font-size: 22px;
+  }
+  h4{
+  font-size: 15px;
+  }
+  .B{
+    margin-top: 12%;
+  }
+  .butn{
+    width: 120px;
+    font-size: 15px;
+    padding: 8px 20px; 
+  }
+  .ic{
+    font-size: 16px;
+  }
+
+  .avatar{
+    font-size: 55px;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    }
+ }
+
+ @media(max-width: 280px){
+  .let {
+    font-size: 25px;
+  }
+}
