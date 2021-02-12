@@ -1,6 +1,8 @@
 
 
 
+
+
 html,body {
 	margin:0;
 	padding:0;
@@ -10,7 +12,9 @@ html,body {
 body{
 	font-weight: 400;
 	font-size: 15px;
-	background-color: rgb(210, 250, 159);
+     background-image:url('images/SID.jpg');
+	 background-repeat: no-repeat;
+
 }
 .bag{
 	background-color: #0ca12c  ;	
@@ -34,64 +38,275 @@ a{
 	max-width: 820px;
 	margin: 10px auto 0 auto;
 }
-.cn-container h2{
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	color: #fff;
-	position: absolute;
-	z-index: 10000;
-	text-shadow: 0 0 1px rgba(255,255,255,0.8), 1px 1px 1px rgba(0,0,0,0.2);
-	font-size: 80px;
-	line-height: 80px;
-	top: 200px;
-	right: 0px;
-	white-space: nowrap;
 
+
+.wrapper{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.cn-slide .but a{
-	text-align: center;
-	display: block;
-	font-family: 'Acme', sans-serif;
-	border: 8px solid #fff;
-	padding: 2%;
-	font-size: 66px;
-	letter-spacing: 7px;
-	text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-	color: #fff;
-	line-height: 66px;
-	outline: none;
-	margin: 0 0 15px 0;
-	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
-	-webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%; 
-	background-clip: padding-box; 	
-	opacity: 1;
-	-webkit-transition: opacity 0.4s linear, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	-moz-transition: opacity 0.4s linear, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	-o-transition: opacity 0.4s linear, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	-ms-transition: opacity 0.4s linear, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
-	transition: opacity 0.4s linear, border-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+.link_wrapper{
+  position: relative;
 }
 
-.cn-slide .but a:hover{
-	border-color: rgb(16, 53, 21) ;
-	color: rgb(16, 53, 21);
-	background: linear-gradient(rgba(245, 242, 242, 0.3),rgba(247, 243, 243, 0.3));
-	font-weight: bold;
-	transform: scale(1,1.1);
-	transition: 0.3s transform;
-	text-decoration: none;
-  
+.new-l{
+  display: block;
+  width: 700px;
+  height: 100px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: url(images/dinner4.jpeg) center center;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.new-b{
+  display: block;
+  width: 700px;
+  height: 100px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+ background: url(images/lunch5.jpeg) center center ;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.new-d{
+  display: block;
+  width: 700px;
+  height: 100px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: url(images/breakfast2.jpeg) center center;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.new-s{
+  display: block;
+  width: 700px;
+  height: 100px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: url(images/snacks2.JPG) center center;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
 }
 
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+.new-d:hover{
+  width: 700px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+.new-l:hover{
+  width: 700px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+.new-s:hover{
+  width: 700px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+.new-b:hover{
+  width: 700px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+
+.new-d:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+.new-s:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+
+.new-l:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
+.new-b:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
+}
 
 @media screen and (max-width: 900px){
 	.cn-container h2{
 		font-size: 48px;
 		line-height: 95px;
 	}
-	.cn-slide .but a{
+	.cn-slide  a{
 		font-size: 38px;
 	}
+	.icon svg
+	{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+    }
+	.new-l:hover{
+  width: 100px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+   }
+   .new-d:hover{
+  width: 100px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+.new-b:hover{
+  width: 100px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+.new-s:hover{
+  width: 100px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+   .icon{
+  width: 30px;
+  height: 30px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.new-l{
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.new-b{
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.new-d{
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
+.new-s{
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #333;
+  transition: all .35s;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
